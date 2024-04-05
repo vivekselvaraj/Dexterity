@@ -54,6 +54,7 @@ public class PrimaryCreateFingerInteraction : MonoBehaviour
                     endPosition = currentPosition;
                     updateCube();
                     setTransparency(cube, 1.0f);
+                    rightHand.GetComponent<AudioSource>().Play();
                     cube = null; // Created - setting it to null    
                 }
                 
@@ -68,7 +69,7 @@ public class PrimaryCreateFingerInteraction : MonoBehaviour
         Vector3 center = (startPosition + endPosition) / 2f;
         if (cube == null)
         {
-            cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            // cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
             cube = Instantiate(cubePrefab, center, Quaternion.identity);
             setRandomColor(cube);
             setTransparency(cube, 0.5f);
