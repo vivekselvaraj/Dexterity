@@ -12,9 +12,11 @@ public class PrimaryCreateFingerInteraction : MonoBehaviour
     public OVRSkeleton rightSkeleton;
     public GameObject cubePrefab;
     public GameObject spherePrefab;
+    public AudioClip clickAudioClip;
+
     private float pinchHoldDuration = 0.2f; // Duration to check if it is pinch or pinch and hold
     private float startTime = 0f;
-    private bool cubeSelected = true; // Boolean to track the selected primitive cube/sphere
+    public bool cubeSelected = true; // Boolean to track the selected primitive cube/sphere
     private GameObject cube;
     private bool pinchStarted; 
     private Vector3 startPosition;
@@ -53,6 +55,7 @@ public class PrimaryCreateFingerInteraction : MonoBehaviour
                 if (Time.time - startTime < pinchHoldDuration) {
                     Debug.Log("Pinch Detected");
                     cubeSelected = !cubeSelected;
+                    rightHand.GetComponent<AudioSource>().PlayOneShot(clickAudioClip, 1.0f);
                 } else {
                     endPosition = currentPosition;
                     updateCube();

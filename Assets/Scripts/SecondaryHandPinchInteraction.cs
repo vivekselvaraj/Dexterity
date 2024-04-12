@@ -17,8 +17,8 @@ public class SecondaryHandPinchInteraction : MonoBehaviour
 
     public enum LeftActions
     {
-        Undo,
-        Redo, 
+        Scale,
+        Undo, 
         Duplicate,
         Settings
     }
