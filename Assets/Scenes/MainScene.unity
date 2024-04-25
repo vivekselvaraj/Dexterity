@@ -488,6 +488,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2464299262102516848, guid: f54012181eacade4ea242c65f804720f, type: 3}
+      propertyPath: far clip plane
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2464299262102516848, guid: f54012181eacade4ea242c65f804720f, type: 3}
+      propertyPath: near clip plane
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2464299264118713322, guid: f54012181eacade4ea242c65f804720f, type: 3}
+      propertyPath: far clip plane
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2464299264118713322, guid: f54012181eacade4ea242c65f804720f, type: 3}
+      propertyPath: near clip plane
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 2483171111210845616, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: _interactors.Array.size
       value: 1
@@ -509,12 +525,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2483171112400622654, guid: f54012181eacade4ea242c65f804720f, type: 3}
+      propertyPath: far clip plane
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483171112400622654, guid: f54012181eacade4ea242c65f804720f, type: 3}
+      propertyPath: near clip plane
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483171112400622654, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: m_BackGroundColor.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2483171112407822886, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: isInsightPassthroughEnabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2483171112681471078, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: _interactors.Array.size
@@ -1331,11 +1355,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 807074390434618255, guid: df1bae5be1415b447b620a262fa05960, type: 3}
       propertyPath: _stepsToActivate.Array.data[1]._maxStepTime
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 807074390434618255, guid: df1bae5be1415b447b620a262fa05960, type: 3}
       propertyPath: _stepsToActivate.Array.data[1]._minActiveTime
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 807074390638706258, guid: df1bae5be1415b447b620a262fa05960, type: 3}
       propertyPath: _minTimeInState
@@ -2001,11 +2025,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 807074390434618255, guid: df1bae5be1415b447b620a262fa05960, type: 3}
       propertyPath: _stepsToActivate.Array.data[1]._maxStepTime
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 807074390434618255, guid: df1bae5be1415b447b620a262fa05960, type: 3}
       propertyPath: _stepsToActivate.Array.data[1]._minActiveTime
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 807074390638706258, guid: df1bae5be1415b447b620a262fa05960, type: 3}
       propertyPath: _minTimeInState

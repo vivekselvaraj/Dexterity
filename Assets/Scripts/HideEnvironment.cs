@@ -12,7 +12,11 @@ public class HideEnvironment : MonoBehaviour
         var centerCamera = ovrCameraRig.centerEyeAnchor.GetComponent<Camera>();
         centerCamera.clearFlags = CameraClearFlags.SolidColor;
         centerCamera.backgroundColor = Color.clear;
+        //OVRManager.instance.passthrough.EnablePassthrough();
+        OVRManager ovrManager = GameObject.Find("OVRCameraRig").GetComponent<OVRManager>();
+        ovrManager.isInsightPassthroughEnabled = true;
         gameObject.SetActive(false);
+
     }
 
     public void HidePassthrough() {
@@ -20,6 +24,9 @@ public class HideEnvironment : MonoBehaviour
         var centerCamera = ovrCameraRig.centerEyeAnchor.GetComponent<Camera>();
         centerCamera.clearFlags = CameraClearFlags.Skybox;
         centerCamera.backgroundColor = originalColor;
+        OVRManager ovrManager = GameObject.Find("OVRCameraRig").GetComponent<OVRManager>();
+        ovrManager.isInsightPassthroughEnabled = false;
         gameObject.SetActive(true);
+        //OVRManager.instance.passthrough.DisablePassthrough();
     }
 }

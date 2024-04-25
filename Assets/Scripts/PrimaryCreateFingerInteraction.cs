@@ -32,9 +32,15 @@ public class PrimaryCreateFingerInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool isFingerPinching = rightHand.GetFingerIsPinching(OVRHand.HandFinger.Middle);
+        bool isFingerPinching = false;
+
+        // if (rightHand.IsTracked)
+        if (true)
+        {
+            isFingerPinching = rightHand.GetFingerIsPinching(OVRHand.HandFinger.Middle);
+            currentPosition = getAverageFingerPosition();
+        }
         
-        currentPosition = getAverageFingerPosition();
 
         if (isFingerPinching) { // Finger pinching
             if (pinchStarted) { // Continue dragging and scaling cube
