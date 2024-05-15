@@ -115,18 +115,18 @@ public class SecondaryHandPinchInteraction : MonoBehaviour
         Image img = label.GetComponent<Image>();
         Color newColor = img.color;
         newColor.a = 1.0f;
-        label.GetComponent<FadeInTransition>().fadeInStarted = false;
+        // label.GetComponent<FadeInTransition>().fadeInStarted = false;
         img.color = newColor;
     }
 
     private void dimLabel()
     {
-        if (!label.GetComponent<FadeInTransition>().fadeInStarted) {
+        // if (!label.GetComponent<FadeInTransition>().fadeInStarted) {
             Image img = label.GetComponent<Image>();
             Color newColor = img.color;
             newColor.a = 0.5f;
             img.color = newColor;
-        }
+        // }
     }
 
     private void hideLabel()
@@ -140,7 +140,7 @@ public class SecondaryHandPinchInteraction : MonoBehaviour
         if (!label.activeSelf && !isFingerMenuVisible) {
             isFingerMenuVisible = true;
             label.SetActive(true);
-            label.GetComponent<FadeInTransition>().TriggerFadeIn();
+           //  label.GetComponent<FadeInTransition>().TriggerFadeIn();
         }
         //if (!label.GetComponent<FadeInTransition>().fadeInStarted)
         OVRSkeleton.BoneId[] boneIds = { 
