@@ -31,6 +31,8 @@ public class SecondaryHandPinchInteraction : MonoBehaviour
         Pinky
     }
 
+    private bool isFingerMenuVisible = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -129,12 +131,14 @@ public class SecondaryHandPinchInteraction : MonoBehaviour
 
     private void hideLabel()
     {
+        isFingerMenuVisible = false;
         label.SetActive(false);
     }
 
     private void showLabelOnFinger(Finger finger)
     {
-        if (!label.activeSelf) {
+        if (!label.activeSelf && !isFingerMenuVisible) {
+            isFingerMenuVisible = true;
             label.SetActive(true);
             label.GetComponent<FadeInTransition>().TriggerFadeIn();
         }
