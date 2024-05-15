@@ -89,8 +89,8 @@ public class SecondaryHandPinchInteraction : MonoBehaviour
         // Update2();
         // Get finger pinch values
         (float pinchStrength, Finger finger) = getPinchingFinger();
-        dialogTitle.text = finger.ToString();
-        dialogBody.text = pinchStrength.ToString();
+        //dialogTitle.text = finger.ToString();
+        //dialogBody.text = pinchStrength.ToString();
         if (pinchStrength > 0)
         {
             showLabelOnFinger(finger);
@@ -103,7 +103,7 @@ public class SecondaryHandPinchInteraction : MonoBehaviour
             }
         } else
         {
-            hideLabel();
+            //hideLabel();
         }
 
     }
@@ -113,7 +113,7 @@ public class SecondaryHandPinchInteraction : MonoBehaviour
         Image img = label.GetComponent<Image>();
         Color newColor = img.color;
         newColor.a = 1.0f;
-        label.GetComponent<FadeInTransition>().fadeInStarted = false;
+      //  label.GetComponent<FadeInTransition>().fadeInStarted = false;
         img.color = newColor;
     }
 
@@ -158,6 +158,7 @@ public class SecondaryHandPinchInteraction : MonoBehaviour
         labelPosition = labelPosition + directionToCamera * distanceToMove;
 
         label.GetComponentInChildren<TMP_Text>().text = ((LeftActions)((int)finger)).ToString();
+        //label.GetComponentInChildren<TMP_Text>().text = "Hand Grab";
         label.transform.position = labelPosition;
         label.transform.rotation = Quaternion.LookRotation(label.transform.position - camera.position);
 
