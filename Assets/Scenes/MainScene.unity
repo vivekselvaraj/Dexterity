@@ -1775,14 +1775,50 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1011532340374259945, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1011532340374259945, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1011532340374259945, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1011532340374259945, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 41.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1011532340374259945, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1011532340374259945, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2032969103797376957, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
       propertyPath: m_Name
       value: FingerMenu
       objectReference: {fileID: 0}
     - target: {fileID: 2160495884433941895, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: handTransform
+      value: 
+      objectReference: {fileID: 1409078669}
+    - target: {fileID: 2160495884433941895, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
       propertyPath: cameraTransform
       value: 
       objectReference: {fileID: 209826306}
+    - target: {fileID: 2733817871320715383, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2733817871320715383, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2733817871320715383, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
       propertyPath: m_SizeDelta.x
       value: 180
@@ -1798,6 +1834,46 @@ PrefabInstance:
     - target: {fileID: 2733817871320715383, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -122.454994
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219193741656941393, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: m_Looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219193741656941393, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: 7608bd923beee0549ac1e9ba609410f8, type: 3}
+    - target: {fileID: 3219193741656941393, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: m_PlaybackSpeed
+      value: 1.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219193741656941393, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: m_ControlledAudioTrackCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219193741656941393, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: m_DirectAudioMutes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219193741656941393, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: m_DirectAudioVolumes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219193741656941393, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: m_EnabledAudioTracks.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219193741656941393, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: m_TargetAudioSources.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219193741656941393, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: m_DirectAudioVolumes.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219193741656941393, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: m_EnabledAudioTracks.Array.data[0]
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5960124344546592722, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
       propertyPath: m_Pivot.x
@@ -1878,6 +1954,22 @@ PrefabInstance:
     - target: {fileID: 5960124344546592722, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883157810135271109, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883157810135271109, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883157810135271109, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883157810135271109, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 8579394825881676443, guid: d42826b3afbfe3c4585f8ac13522fab0, type: 3}
       propertyPath: m_Color.a
@@ -2153,6 +2245,11 @@ AudioSource:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2859147190566827361, guid: bf018bf093319f840a7314cb25167d8c, type: 3}
   m_PrefabInstance: {fileID: 318556092}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1409078669 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7215171681461543760, guid: f54012181eacade4ea242c65f804720f, type: 3}
+  m_PrefabInstance: {fileID: 209826305}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1441265894
 PrefabInstance:
